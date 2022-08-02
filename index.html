@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+	      name="viewport">
+	<meta content="ie=edge" http-equiv="X-UA-Compatible">
+	<!-- CSS only -->
+	<link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+	      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" rel="stylesheet">
+	<title>Document</title>
+</head>
+<body onload="grabJson()">
+<main class="container">
+	<h1>Javascript Events Challenge Answer Key</h1>
+	<section class="py-3">
+		<h2>Change Text Color</h2>
+		<p id="text-color">Research & development analytics A/B testing seed money niche market beta value proposition
+			bootstrapping freemium bandwidth first mover advantage entrepreneur. Analytics rockstar business-to-consumer
+			freemium low hanging fruit supply chain branding business model canvas equity crowdfunding responsive web design
+			direct mailing partner network assets.</p>
+		<button class="btn btn-primary" onclick="changeTextColor()">Change Color</button>
+		<button class="btn btn-danger" onclick="resetTextColor()">Reset Color</button>
+
+	</section>
+
+	<section class="py-3">
+		<h2>Find And Replace</h2>
+		<p id="find-replace"> Long tail handshake bootstrapping customer MVP ramen accelerator venture agile development
+			startup. Seed round
+			disruptive gamification growth hacking MVP agile development early adopters traction technology product management
+			validation buzz business model canvas. Technology business-to-business rockstar series A financing startup
+			interaction design success pitch MVP stealth creative android beta. Success pivot customer crowdfunding scrum
+			project network effects seed round. Client validation assets MVP mass market churn rate alpha long tail startup.
+			Holy grail android release iteration incubator termsheet business-to-consumer validation startup bootstrapping
+			ownership pitch.
+		</p>
+		<div class="row">
+			<form class="col-sm-6" novalidate onsubmit="findReplace(event)">
+				<div class="form-group">
+					<label for="text-find">Find</label>
+					<input class="form-control" id="text-find" type="text">
+				</div>
+				<div class="form-group">
+					<label for="text-replace">Replace</label>
+					<input class="form-control" id="text-replace" type="text">
+				</div>
+				<button class="btn btn-primary" type="submit">Submit</button>
+
+			</form>
+		</div>
+
+	</section>
+	<section class="py-3">
+		<h2>Shuffle text</h2>
+		<p  id="shuffle">Influencer agile development business model canvas release market scrum project founders lean startup seed round venture. MVP buzz non-disclosure agreement network effects venture focus return on investment product management. Interaction design pitch growth hacking funding. Long tail seed money analytics learning curve crowdfunding release user experience bootstrapping graphical user interface. Responsive web design freemium deployment customer investor learning curve ramen scrum project startup long tail infrastructure infographic assets.</p>
+		<button class="btn btn-primary" onclick="shuffleText()">Shuffle Text</button>
+	</section>
+	<section class="py-3" >
+		<p id="target"></p>
+	</section>
+</main>
+<script src="script.js"></script>
+
+</body>
+</html>
